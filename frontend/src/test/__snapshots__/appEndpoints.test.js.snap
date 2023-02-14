@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly 1`] = `
+<div
+  className="main"
+>
+  <nav
+    className="fixed-top navbar navbar-expand-lg navbar-light bg-secondary"
+  >
+    <div
+      className="container-fluid"
+    >
+      <a
+        className="navbar-brand"
+        href="http://localhost:3000/"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        Hyperion Tunes
+      </a>
+      <div
+        aria-expanded={null}
+        className="navbar-collapse collapse"
+        id="navbarScroll"
+      >
+        <button
+          aria-controls="navbarScroll"
+          aria-label="Toggle navigation"
+          className="navbar-toggler collapsed"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          className="me-auto my-2 my-lg-0 navbar-nav navbar-nav-scroll"
+          onKeyDown={[Function]}
+          style={
+            Object {
+              "maxHeight": "100px",
+            }
+          }
+        />
+        <form
+          className="d-flex"
+          onSubmit={[Function]}
+        >
+          <input
+            aria-label="Search"
+            className="me-2 form-control"
+            name="term"
+            onChange={[Function]}
+            placeholder="Search"
+            type="search"
+            value=""
+          />
+          <select
+            className="me-2 form-control"
+            name="entity"
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value=""
+            >
+              Select Criteria
+            </option>
+            <option
+              value="musicTrack"
+            >
+              Music
+            </option>
+            <option
+              value="ebook"
+            >
+              Book
+            </option>
+            <option
+              value="software"
+            >
+              Software
+            </option>
+          </select>
+          <button
+            className="btn btn-outline-success"
+            disabled={false}
+            style={
+              Object {
+                "border": "1px solid white",
+                "color": "white",
+              }
+            }
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div
+    className="cards"
+    style={
+      Object {
+        "maxWidth": "80%",
+      }
+    }
+  />
+  <div
+    className="sidebar"
+  >
+    <h2>
+      Favorites
+    </h2>
+    <ul />
+  </div>
+</div>
+`;
