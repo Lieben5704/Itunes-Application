@@ -1,14 +1,26 @@
-// import required modules
-let express = require("express");
+let express = require('express');
+let helmet = require('helmet');
+let rateLimit = require("express-rate-limit");
 let axios = require("axios");
+let port = process.env.PORT || 5000;
+
 let app = express();
 
-// import and use helmet middleware for secure headers
-let helmet = require("helmet");
-app.use(helmet());
+//This line of code sets the X-Frame-Options header to SAMEORIGIN using the frameguard middleware from the helmet library. 
+//This header prevents clickjacking attacks by ensuring that the website can only be embedded in frames on pages from the same origin.
+app.use(helmet.frameguard({ action: "sameorigin" }));
 
-// set the port number as per the environment variable or default to 5000
-let port = process.env.PORT || 5000;
+//The directives object sets the allowed sources for certain types of content. 
+//In this case, the defaultSrc directive only allows resources to be loaded from the same origin, and the scriptSrc directive allows resources to be 
+//loaded from the same origin as well as inline scripts with the 'unsafe-inline' keyword.
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'"],
+    },
+  })
+);
 
 // define an API endpoint for search
 app.get("/api/search", async (req, res) => {

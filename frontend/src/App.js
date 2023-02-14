@@ -26,7 +26,7 @@ class App extends Component {
 
   // Remove an item from the 'favorites' array based on the index passed as an argument
   handleRemoveFromFavorites(index) {
-    const favorites = this.state.favorites.slice();
+    let favorites = this.state.favorites.slice();
     favorites.splice(index, 1);
     this.setState({ favorites });
   }

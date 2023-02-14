@@ -4,7 +4,7 @@ import App from "../App";
 
 describe("App", () => {
   it("should render correctly", () => {
-    const tree = renderer.create(<App />).toJSON();
+    let tree = renderer.create(<App />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
