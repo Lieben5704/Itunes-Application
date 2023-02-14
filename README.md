@@ -12,12 +12,9 @@
 7. Click the "Add to Favorites" button on any search result to add it to your favorites list.
 8. Click the "x" button next to any item in your favorites list to remove it.
 
-## Security Measures
+## Helmet - Security Measures
 
-- We have used the helmet middleware to secure our Express app by setting various HTTP headers that protect against attacks such as cross-site scripting (XSS) and clickjacking.
-- We have stored API keys in environment variables and used the dotenv package to load them into our app at runtime. This prevents sensitive information from being committed to version control.
-- We have rate-limited requests to the iTunes API to prevent abuse or accidental overload of their service. This was done using the express-rate-limit middleware.
-- We have also implemented input validation and sanitation to prevent against common security vulnerabilities such as SQL injection and cross-site scripting (XSS).
+The back-end of the application uses the Helmet middleware to set the X-Frame-Options header to SAMEORIGIN, preventing clickjacking attacks by ensuring that the website can only be embedded in frames on pages from the same origin. The middleware also sets the Content-Security-Policy header to restrict the sources of certain types of content, allowing resources to be loaded from the same origin, and inline scripts with the 'unsafe-inline' keyword.
 
 
 ## Installing and Running the App
@@ -25,7 +22,7 @@
 
 1. Clone the project repository from GitHub: git clone https://github.com/Lieben5704/ITunes_Capstone.git
 2. Navigate to the project directory: cd repo
-3. Start the app: npm start
-5. Open your web browser and go to http://localhost:3000
+3. Start the app: npm start (This will start both backend and frontend automatically)
+4. Open your web browser and go to http://localhost:3000
 
 
