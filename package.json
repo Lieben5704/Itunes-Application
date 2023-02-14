@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
     "test": "mocha"
   },
   "dependencies": {
@@ -27,5 +28,5 @@
     "nodemon": "^2.0.20",
     "supertest": "^6.3.3"
   },
-  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+ 
 }
