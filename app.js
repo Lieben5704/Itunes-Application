@@ -2,7 +2,11 @@ let express = require('express');
 let helmet = require('helmet');
 let rateLimit = require("express-rate-limit");
 let axios = require("axios");
-let port = process.env.PORT || 5000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 5000;
+}
+app.listen(port);
 
 let app = express();
 
@@ -41,11 +45,6 @@ app.get("/api/search", async (req, res) => {
 
   // return the response data from iTunes API to the client
   res.send(result.data);
-});
-
-// start the server and log the port number
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
 });
 
 // export the app instance for testing purposes
