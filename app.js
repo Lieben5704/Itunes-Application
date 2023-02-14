@@ -1,6 +1,5 @@
 let express = require('express');
 let helmet = require('helmet');
-let rateLimit = require("express-rate-limit");
 let axios = require("axios");
 let port = process.env.PORT;
 if (port == null || port == "") {
