@@ -22,7 +22,8 @@ The back-end of the application uses the Helmet middleware to set the X-Frame-Op
 
 1. Clone the project repository from GitHub: git clone https://github.com/Lieben5704/ITunes_Capstone.git
 2. Navigate to the project directory: cd repo
-3. Start the app: npm start (This will start both backend and frontend automatically)
+3. Installation: npm install && cd frontend && npm install
+3. Start the app: npm start && cd frontend && npm start
 4. Open your web browser and go to http://localhost:3000
 
 
