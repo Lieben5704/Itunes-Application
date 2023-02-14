@@ -56,7 +56,7 @@ class App extends Component {
       {/* The navigation bar */}
       <Navbar bg="secondary" expand="lg" className='fixed-top'>
         <Container fluid>
-          <Navbar.Brand href="http://localhost:3000/" style={{color: "white"}}>Hyperion Tunes</Navbar.Brand>
+          <Navbar.Brand href="http://localhost:3000/" style={{color: "white"}}>ITunes Search</Navbar.Brand>
           <Navbar.Collapse id="navbarScroll">
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Nav
