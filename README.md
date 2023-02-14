@@ -22,10 +22,9 @@
 ## Installing and Running the App
 ### To install and run the app on your local machine, follow these steps:
 
-1. Clone the project repository from GitHub: git clone https://github.com/username/repo.git
+1. Clone the project repository from GitHub: git clone https://github.com/Lieben5704/ITunes_Capstone.git
 2. Navigate to the project directory: cd repo
-3. Install the app dependencies: npm install
-4. Start the app: npm start
+3. Start the app: npm start
 5. Open your web browser and go to http://localhost:3000
 
 
