@@ -22,6 +22,14 @@ app.use(
   })
 );
 
+if (process.env.NODE_ENV === 'production'){
+  app.use(express.static(path.join(__dirname, 'frontend/build')));
+  app.get('*',(req,res)=> {res.sendFile(path.resolve(__dirname,
+  'frontend', 'build','index.html'));
+  });
+  }
+  
+
 // define an API endpoint for search
 app.get("/api/search", async (req, res) => {
   let { term, entity } = req.query;
