@@ -1,4 +1,4 @@
-# Level 2 - Capstone - ITunes_App
+# ITunes App
 
 
 ## How to Use the App
