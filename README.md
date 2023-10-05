@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [How to Use the App](#how-to-use-the-app)
-2. [Helmet - Security Measures](#helmet-security-measures)
+2. [Helmet - Security Measures](#helmet---security-measures)
 3. [Installing and Running the App](#installing-and-running-the-app)
 
 ## How to Use the App
